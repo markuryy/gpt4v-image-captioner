@@ -134,7 +134,10 @@ ${customInstruction}
           {
             role: "user",
             content: [
-              { type: "text", text: "What's in this image?" },
+              {
+                type: "text",
+                text: "Here is an image for you to describe. Please describe the image in detail and ensure it adheres to the guidelines set out in the System Prompt. Do not include any uncertainty (i.e. I dont know, appears, seems) or any other text. Focus exclusively on visible elements and not concenptual ones. Thank you very much for your help!",
+              },
               {
                 type: "image_url",
                 image_url: {
