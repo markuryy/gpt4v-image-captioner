@@ -79,7 +79,7 @@ const Home: React.FC = () => {
     const imageCaptionPromises = images.map(async (image) => {
       const base64Image = await convertToBase64(image)
       const response = await openai.chat.completions.create({
-        model: "gpt-4-turbo",
+        model: "gpt-4o",
         messages: [
           {
             role: "system",
